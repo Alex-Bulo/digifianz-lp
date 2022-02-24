@@ -1,7 +1,8 @@
 .main{
     width: 100%;
-    background-color: var(--background-color-main);
+    padding-bottom: 20px;
 
+    background-color: var(--background-color-main);
 }
 .welcome-container{
     height: 65vh;
@@ -13,7 +14,7 @@
     
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     
     display: flex;
     align-items: center;
@@ -82,4 +83,33 @@
 .msg-container h3{
     width: 234px;
     margin: 40px 0;
+}
+
+
+
+@media (min-width:361px) {
+    .welcome-container{
+        background-size: 100% 100%;
+        min-height: 300px;
+    }
+    .welcome-container h2{
+        width: 730px;
+        margin: auto;
+    }
+    .cards-container{
+        margin: 20px 0;
+    }
+    .msg-container{
+        margin-bottom: 20px;
+        padding: 40px;
+
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .msg-container h3{
+        margin-left: 20px;
+        width: 730px;
+        text-align: left;
+    }
 }
