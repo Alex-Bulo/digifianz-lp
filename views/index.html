@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/bbcd5b93e4.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"  href="/css/index.css">
+    <link rel="stylesheet"  href="/css/main.css">
+    <link rel="stylesheet"  href="/css/form.css">
+
+    <script src="/js/landing.js"></script>
+
+    <title>Digifianz LP</title>
+</head>
+<body>
+    <header class='header'>
+        <img src="/images/Digifianz-Logo.svg" alt="Logo de Digifianz">
+        <i class="fa-solid fa-bars menu-icn"></i>
+        <nav class="navbar-container">
+            <ul class="menu-items">
+                <i class="fa-solid fa-xmark icn-close"></i>
+                <li class="menu-item"><a href="#section1" class="menu-link">Welcome</a></li>
+                <li class="menu-item"><a href="#section2" class="menu-link">Instrucciones</a></li>
+                <li class="menu-item"><a href="#section3" class="menu-link">Mensaje</a></li>
+                <li class="menu-item"><button class="menu-btn">¡Hace click aqui!</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id='section1' class="welcome-container">
+            <h2 class="title">Bienvenid@ al test de aptitudes técnicas de Digifianz</h2>
+        </section>
+        
+        <section id='section2' class="cards-container">
+            <article class="card">
+                <div class="img-container">
+                    <img class="card-img" src="/images/card 1.png" alt="Imagen de tarjeta 'Hacer Ejercicio'">
+                </div>
+                <h3 class="detail">Hace este ejercicio</h3>
+            </article>
+            <article class="card">
+                <div class="img-container">
+                    <img class="card-img" src="/images/card 2.png" alt="Imagen de tarjeta 'Evalluar Ejercicio'">
+                </div>
+                <h3 class="detail">Lo evaluaremos con nuestro equipo</h3>
+            </article>
+            <article class="card">
+                <div class="img-container">
+                    <img class="card-img" src="/images/card 1.png" alt="Imagen de tarjeta 'Trabaja con Digifianz'">
+                </div>
+                <h3 class="detail">Te sumas al equipo de Digifianz</h3>
+            </article>
+
+        </section>
+        
+        <section id='section3' class="msg-container">
+            <img class="msg-img" src="/images/msg.png" alt="Imagen de mensaje de bienvenida">
+            <h3 class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lorem eget tellus vehicula dignissim. Cras ac ex a odio faucibus fermentum. Cras gravida urna eget nunc pellentesque, et lobortis sapien maximus. Nulla interdum ex lorem, non porta urna pharetra ac. Nulla risus nisl, dictum vitae volutpat sed, egestas ut nulla. In sagittis ante odio.<br/><br/>Praesent sit amet nibh aliquam, molestie ipsum non, volutpat nisl. Phasellus a eleifend libero. Sed imperdiet, elit quis porttitor ullamcorper, purus justo malesuada tortor, at pretium est ipsum in velit. Suspendisse id aliquam sem. Proin non diam ligula. </h3>
+        </section>
+    </main>
+    <form class='form-container' action="/contacto" method="GET">
+        <h3 class="form-title">Formulario</h3>
+        <div class="inputs-container">
+            <div class="input-container">
+                <label for="name">Nombre<span>*</span></label>
+                <input id='name' type="text" name="name"/>
+            </div>
+            
+            <div class="input-container">
+                <label for="lastName">Apellido<span>*</span></label>
+                <input id='lastName' type="text" name="lastName"/>
+            </div>
+
+            <div class="input-container">
+                <label for="email">Correo electrónico<span>*</span></label>
+                <input id='email' type="email" name="email"/>
+            </div>
+
+            <div class="input-container">
+                <label for="institution">Nombre de la institución<span>*</span></label>
+                <input id="institution" type="text" name="institution"/>
+            </div>
+
+            <div class="input-container">
+                <label for="tel">N° de teléfono<span>*</span></label>
+                <input id='tel' type="number" name="tel"/>
+            </div>
+
+            <div class="input-container">
+                <label for="country">País<span>*</span></label>
+                <input id='country' type="text" name="country"/>
+            </div>    
+        </div>
+
+        <button id="form-submit" type="submit">Enviar</button>
+    </form>
+    
+    <footer class="footer">
+        <a href="#section1"><img src="/images/Digifianz-Logo.svg" alt="Logo de Digifianz"></a>
+    </footer>
+
+</body>
+</html>

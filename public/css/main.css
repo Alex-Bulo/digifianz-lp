@@ -1,0 +1,85 @@
+.main{
+    width: 100%;
+    background-color: var(--background-color-main);
+
+}
+.welcome-container{
+    height: 65vh;
+    width: 100%;
+
+    padding: 40px;
+    
+    background-image: url('/images/Hero-background.png');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+}
+.cards-container{
+    height: 65vh;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    overflow-x: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+.cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    width: 206px;
+    height: 299px;
+
+    margin-right: 40px;
+    padding: 40px;
+
+    background-color: var(--background-color-main);
+    filter: drop-shadow(0 0 12px rgba(139, 95, 191, 0.6));
+    
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card:first-of-type{
+    margin-left: 25%;
+}
+.img-container{    
+    height: 147px;
+    width: 126px;
+    border-radius: 69px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-color-accent);
+}
+.card h3,
+.msg-container h3{
+    text-align: center;
+}
+.msg-container{
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msg-container h3{
+    width: 234px;
+    margin: 40px 0;
+}
