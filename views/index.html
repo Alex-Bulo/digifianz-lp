@@ -21,7 +21,7 @@
 </head>
 <body>
     <header class='header'>
-        <img src="/images/Digifianz-Logo.svg" alt="Logo de Digifianz">
+        <a href='https://www.digifianz.com/' target="blank"><img src="/images/Digifianz-Logo.svg" alt="Logo de Digifianz"></a>
         <i class="fa-solid fa-bars menu-icn"></i>
         <nav class="navbar-container">
             <ul class="menu-items">
@@ -101,6 +101,45 @@
 
         <button id="form-submit" type="submit">Enviar</button>
     </form>
+    <div class="modal">
+        <form  id='modal-form' class='form-container' action="/contacto" method="GET">
+            <i class="fa-solid fa-xmark modal-close"></i>
+            <h3 class="form-title">Formulario</h3>
+            <div class="inputs-container">
+                <div class="input-container">
+                    <label for="name2">Nombre<span>*</span></label>
+                    <input id='name2' type="text" name="name"/>
+                </div>
+                
+                <div class="input-container">
+                    <label for="lastName2">Apellido<span>*</span></label>
+                    <input id='lastName2' type="text" name="lastName"/>
+                </div>
+    
+                <div class="input-container">
+                    <label for="email2">Correo electrónico<span>*</span></label>
+                    <input id='email2' type="email" name="email"/>
+                </div>
+    
+                <div class="input-container">
+                    <label for="institution2">Nombre de la institución<span>*</span></label>
+                    <input id="institution2" type="text" name="institution"/>
+                </div>
+    
+                <div class="input-container">
+                    <label for="tel2">N° de teléfono<span>*</span></label>
+                    <input id='tel2' type="number" name="tel"/>
+                </div>
+    
+                <div class="input-container">
+                    <label for="country2">País<span>*</span></label>
+                    <input id='country2' type="text" name="country"/>
+                </div>    
+            </div>
+    
+            <button id="form-submit" type="submit">Enviar</button>
+        </form>
+    </div>
     
     <footer class="footer">
         <a href="#section1"><img src="/images/Digifianz-Logo.svg" alt="Logo de Digifianz"></a>

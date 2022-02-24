@@ -33,6 +33,7 @@ window.addEventListener('load', function(){
 
     const inputs = document.querySelectorAll('input')
 
+
     inputs.forEach(input => {
         input.addEventListener('focus', (e)=>{
             const prevLabel = e.target.previousElementSibling;
@@ -52,6 +53,27 @@ window.addEventListener('load', function(){
         })
 
     })
+
+    const menuBtn = document.querySelector('.menu-btn')
+    const modalClose = document.querySelector('.modal-close')
+    const modal = document.querySelector('.modal')
+    const modalForm = document.querySelector('#modal-form')
+
+    menuBtn.addEventListener('click', (e)=>{
+        modal.style.display = 'flex'
+    })
+    
+    modalClose.addEventListener('click', (e)=>{
+        modal.style.display = 'none'
+    })
+    modal.addEventListener('click', (e)=>{
+        modal.style.display = 'none'
+    })
+    modalForm.addEventListener('click', (e)=>{
+        e.stopPropagation()
+    })
+
+
 
     
 
