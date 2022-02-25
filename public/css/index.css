@@ -31,7 +31,11 @@ body{
 .no-show{
     display: none;
 }
-
+.menu-btn,
+.icn-close,
+.modal-close{
+    cursor: pointer;
+}
 .detail{
     font-size: var(--mobile-font-detail);
     color: var(--font-color-detail);
@@ -173,7 +177,7 @@ body{
     background-color: var(--background-color-footer);
 }
 
-@media (min-width:361px) {
+@media (min-width:376px) {
     .detail{
         font-size: var(--desktop-font-detail);
     }

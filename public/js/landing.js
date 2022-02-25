@@ -1,34 +1,39 @@
+function slidingIn(el){
+    el.classList.remove('slideOut')
+    el.classList.add('slideIn')
+}
+function slidingOut(el){
+    el.classList.remove('slideIn')
+    el.classList.add('slideOut')
+}
+
 window.addEventListener('load', function(){
     const hamburgerMenu = document.querySelector('.menu-icn')
     const closeMenu = document.querySelector('.icn-close')
     const menuContainer = document.querySelector('.navbar-container')
     const menu = document.querySelector('.menu-items')
     const menuLinks = document.querySelectorAll('.menu-link')
-
+    
     menu.addEventListener('click', (e)=>{
         e.stopPropagation()
     })
+    
 
     menuLinks.forEach(link => {
         link.addEventListener('click', ()=>{
-            console.log('yes');
-            menuContainer.classList.remove('slideIn')
-            menuContainer.classList.add('slideOut')
+            slidingOut(menuContainer)
         })  
     })
     hamburgerMenu.addEventListener('click', ()=>{
-        menuContainer.classList.remove('slideOut')
-        menuContainer.classList.add('slideIn')
+        slidingIn(menuContainer)
     })
     
     closeMenu.addEventListener('click', ()=>{
-        menuContainer.classList.remove('slideIn')
-        menuContainer.classList.add('slideOut')
+        slidingOut(menuContainer)
     })
     
     menuContainer.addEventListener('click', ()=>{
-        menuContainer.classList.remove('slideIn')
-        menuContainer.classList.add('slideOut')
+        slidingOut(menuContainer)
     })
 
     const inputs = document.querySelectorAll('input')
@@ -59,14 +64,14 @@ window.addEventListener('load', function(){
     const modal = document.querySelector('.modal')
     const modalForm = document.querySelector('#modal-form')
 
-    menuBtn.addEventListener('click', (e)=>{
+    menuBtn.addEventListener('click', ()=>{
         modal.style.display = 'flex'
     })
     
-    modalClose.addEventListener('click', (e)=>{
+    modalClose.addEventListener('click', ()=>{
         modal.style.display = 'none'
     })
-    modal.addEventListener('click', (e)=>{
+    modal.addEventListener('click', ()=>{
         modal.style.display = 'none'
     })
     modalForm.addEventListener('click', (e)=>{
@@ -74,7 +79,7 @@ window.addEventListener('load', function(){
     })
 
 
-
+    
     
 
 
