@@ -68,7 +68,7 @@ body{
     height: 100vh;
     
     top: 0;
-    left: 500px;
+    left: 768px;
 
     z-index: 1;
 
@@ -76,24 +76,7 @@ body{
     
     opacity: 0;
 }
-.slideIn{
-    display: block;
-    opacity: 100%;
 
-    left:0;
-    
-    animation-name: movingIn;
-    animation-duration: .4s;
-    animation-timing-function: ease-in-out;
-}
-.slideOut{
-    left:500px;
-
-    animation-name: movingOut;
-    animation-duration: .4s;
-    animation-timing-function: ease-in-out;
-
-}
 @keyframes movingIn {
     0%{
         left:150px;
@@ -183,7 +166,7 @@ body{
     }
     .title{
         font-size: var(--desktop-font-title);
-    }    
+    }  
 }
 
 @media (min-width:768px) {
@@ -225,5 +208,24 @@ body{
         margin-left: auto;
     }
 
+
+}
+
+.slideIn{
+    display: block;
+    opacity: 100%;
+
+    left:0;
+    
+    animation-name: movingIn;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+}
+.slideOut{
+    left:768px;
+
+    animation-name: movingOut;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
 
 }
