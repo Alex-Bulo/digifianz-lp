@@ -183,19 +183,18 @@ body{
     }
     .title{
         font-size: var(--desktop-font-title);
-    }
+    }    
+}
+
+@media (min-width:768px) {
     .icn-close{
         display: none;
     }
     .menu-icn{
         display: none;
     }
-    .header{
-        min-height: 89px;
-        height: 100%;
-    }
     .navbar-container{
-        width: 66%;
+        width: 50%;
         height: 100%;
         
         position: relative;
@@ -213,11 +212,10 @@ body{
         width: 100%;
         
         flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
+        /* justify-content: flex-end; */
     }
     .menu-item{
-        width: 28%;
+        width: 25%;
     }
     .menu-item:last-child{
         min-width: 150px;
@@ -225,18 +223,6 @@ body{
     .menu-btn{
         margin-top:0;
         margin-left: auto;
-    }
-    
-}
-@media (min-width:768px) {
-    .navbar-container{
-        width: 50%;
-    }
-    .menu-items{
-        flex-wrap: nowrap;
-    }
-    .menu-item{
-        width: 25%;
     }
 
 

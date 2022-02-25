@@ -99,6 +99,12 @@
     .cards-container{
         margin: 20px 0;
     }
+    .msg-container h3{
+        width: 50%;
+    }
+}
+
+@media (min-width:768px) {
     .msg-container{
         margin-bottom: 20px;
         padding: 40px;
@@ -111,5 +117,5 @@
         margin-left: 20px;
         width: 730px;
         text-align: left;
-    }
+    }    
 }
