@@ -99,7 +99,7 @@ window.addEventListener('load', function(){
     
 
     yesBtn.addEventListener('click',()=>{
-        fetch('http://localhost:3000/cv')
+        fetch('https://digifianz-challenge.herokuapp.com/cv')
         .then( res => res.blob() )
         .then( blob => {
           const file = window.URL.createObjectURL(blob);
