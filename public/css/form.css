@@ -51,7 +51,8 @@ label span{
     color: red;
 }
 
-#form-submit{
+#form-submit,
+#form-submit2{
     /* width: 50%; */
     width: 140px;
     height: 47px;

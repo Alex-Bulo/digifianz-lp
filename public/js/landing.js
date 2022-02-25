@@ -79,7 +79,14 @@ window.addEventListener('load', function(){
     })
 
 
-    
+    const formBtns = document.querySelectorAll('.form-container button')
+
+    formBtns.forEach(formBtn => {
+        formBtn.addEventListener('click', (e)=>{
+            e.preventDefault()
+            
+        })
+    })
     
 
 
