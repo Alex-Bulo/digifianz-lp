@@ -61,7 +61,7 @@ window.addEventListener('load', function(){
 
     const menuBtn = document.querySelector('.menu-btn')
     const modalClose = document.querySelector('.modal-close')
-    const modal = document.querySelector('.modal')
+    const modal = document.querySelector('#modal-form-container')
     const modalForm = document.querySelector('#modal-form')
 
     menuBtn.addEventListener('click', ()=>{
@@ -80,14 +80,44 @@ window.addEventListener('load', function(){
 
 
     const formBtns = document.querySelectorAll('.form-container button')
+    const modalCV = document.querySelector('#modal-cv')
+    const yesBtn = document.querySelector('.yes-btn')
+    const noBtn = document.querySelector('.no-btn')
 
     formBtns.forEach(formBtn => {
         formBtn.addEventListener('click', (e)=>{
             e.preventDefault()
-            
+            modalCV.style.display = 'flex'
         })
+    })
+    modalCV.addEventListener('click',()=>{
+        modalCV.style.display = 'none'
+    })
+    noBtn.addEventListener('click',()=>{
+        modalCV.style.display = 'none'
     })
     
 
+    yesBtn.addEventListener('click',()=>{
+        fetch('http://localhost:3000/cv')
+        .then( res => res.blob() )
+        .then( blob => {
+          const file = window.URL.createObjectURL(blob);
+          window.open(file, '_blank').focus();
+        });
+
+        modalCV.style.display = 'none'
+    })
+
+    const buttons = document.querySelectorAll('button')
+    
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', ()=>{
+            button.style.backgroundColor = '#B75FBF'
+        })
+        button.addEventListener('mouseleave', ()=>{
+            button.style.backgroundColor = ''
+        })
+    })
 
 })

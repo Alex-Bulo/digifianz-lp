@@ -14,6 +14,6 @@ app.listen(port, function(){
 app.get('/',function (req,res) {
     res.status(200).sendFile(path.resolve(__dirname,'./views/index.html'))
 })
-app.get('/contacto',function (req,res) {
-    res.status(200).download(path.resolve(__dirname,'./public/images/Alejandro_Bullorini_CV-sp.pdf'))
+app.get('/cv',function (req,res) {
+    res.status(200).sendFile(path.resolve(__dirname,'./public/images/Alejandro_Bullorini_CV-sp.pdf'))
 })
