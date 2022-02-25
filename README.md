@@ -24,12 +24,12 @@ Instrucciones para correr proyecto localmente:
 >  - Uso de NodeJS y ExpressJS para levantar servidor y ruteo
 >  - Redirección a sitio web de Digifianz al clickear logo
 >  - Interacción con los inputs y labels del formulario
->  - Modal con opción para abrir CV en nueva tab
-	>  			- Prevención de envío de formulario
-					- Uso de Fetch y promises
+>  - Modal con opción para abrir CV en nueva tab (al enviar formulario):
+>  			- Prevención de envío de formulario
+>			- Uso de Fetch y promises
 > -  Interacción al hacer hover en botones
-> - Posibilidad de cerrar modales al hacer click fuera del mismo
-	> 				- Uso de stopPropagation
+> - Posibilidad de cerrar modales al hacer click fuera del mismo:
+>			- Uso de stopPropagation
 
 [Ideas de mejora]
 >  - Uso de algún motor de vista (EJS, Handlebars, etc) o FrontEnd framework para componetizar vistas
